@@ -1,0 +1,62 @@
+.new-style{
+    color:red;
+} 
+/* 1. class를 이용한 스타일 주기
+   2. id를 이용
+   3. 직접적으로 스타일 주기
+   4. 복합 선택자
+   p.new-style p태그에 있는 class가 new-style인 태그만 선택
+   div.new-style div태그 아래에 있는 모든 자손들 중 스타일이 new-style을 가진 태그만
+   span>.new-style을 가진 태그를 선택 .new-style
+   
+   >:자식선택자, 스페이스바: 자손선택자
+
+   */
+
+   .box{
+    border: 50px solid red;
+    width: 200px;
+    padding: 50px;
+    margin-bottom: 20px;
+   }
+
+   .green{
+    border-color: green;
+    /* display:none */
+        /* display:none  --> 영역까지 사라짐 */
+    /* visibility:hidden */
+     /* visibility:hidden --> 영역은 유지됨. */
+   }
+
+   .blue{
+    border-color: blue;
+   }
+
+
+   h1{
+    color: #9b59b6;
+   }
+
+   p{
+    font-size: 16px;
+    font-family: Verdana;
+    font-style: italic;
+   }
+
+   .sub-header{
+    color: #2980b9;
+   }
+
+   p::first-letter{
+    font-size: 200%;
+    color: #2980b9;
+   }
+
+   h1::before{
+     content:"Topic: "; 
+   }
+
+   h1::first-letter{
+    text-align: center;
+   }
+
